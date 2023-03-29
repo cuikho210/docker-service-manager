@@ -19,6 +19,9 @@ fn init(args: Vec<String>) {
     else if args[1] == "down" { run_service("down", args); }
     else if args[1] == "start" { run_service("start", args); }
     else if args[1] == "stop" { run_service("stop", args); }
+    else if args[1] == "restart" { run_service("restart", args); }
+    else if args[1] == "logs" { run_service("logs", args); }
+    else if args[1] == "kill" { run_service("kill", args); }
     else if args[1] == "ps" { list_running_services(); }
     else { show_help(); }
 }
