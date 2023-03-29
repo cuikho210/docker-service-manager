@@ -37,7 +37,9 @@ then
     mv "./target/release/docker-service-manager" "${install_path}/dsm"
     echo "Moved ./target/release/docker-service-manager to ${install_path}/dsm"
 else
-    echo "${install_path}/dsm already exists"
+	rm "${install_path}/dsm"
+	mv "./target/release/docker-service-manager" "${install_path}/dsm"
+    echo "Overwritten dsm binary in ${install_path}/dsm"
 fi
 
 echo "End."

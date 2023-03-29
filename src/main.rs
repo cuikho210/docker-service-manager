@@ -99,8 +99,12 @@ fn show_help() {
     println!("  stop ...<service name>          Stop a service");
     println!("  up ...<service name>            Up a service");
     println!("  down ...<service name>          Down a service");
+    println!("  restart ...<service name>       Restart a service");
+    println!("  logs ...<service name>          Show service logs");
+    println!("  kill ...<service name>          Force stop a service");
     println!("  list (or ls)                    List services");
     println!("  rename <old name> <new name>    Rename a service");
+    println!("  ps                              Show running services");
     println!("\n    Example: dsm up nginx mariadb mongodb");
 }
 
